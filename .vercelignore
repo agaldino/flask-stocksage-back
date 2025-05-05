@@ -25,5 +25,5 @@
 
 /*
 !api
-!vercel.json
-!requirements.txt
+# !vercel.json
+# !requirements.txt
