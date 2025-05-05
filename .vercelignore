@@ -1,4 +1,3 @@
-requirements.tsx
 
 .vercel
 *.log
@@ -21,4 +20,5 @@ dairy_dataset.csv
 dairy_evaluation/
 dairy_plots/
 dairy_data/
+current_processed_data.csv
 final_model.pkl	
