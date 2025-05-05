@@ -1,24 +1,29 @@
 
-.vercel
-*.log
-*.pyc
-__pycache__
+# .vercel
+# *.log
+# *.pyc
+# __pycache__
 
-# Environments 
-.env 
-.venv 
-env/ 
-venv/ 
-ENV/ 
-env.bak/ 
-venv.bak/ 
+# # Environments 
+# .env 
+# .venv 
+# env/ 
+# venv/ 
+# ENV/ 
+# env.bak/ 
+# venv.bak/ 
 
-dairy_analisys.py
-dairy_train_models.py
-dairy_preprocess_dataset.py
-dairy_dataset.csv
-dairy_evaluation/
-dairy_plots/
-dairy_data/
-current_processed_data.csv
-final_model.pkl	
+# dairy_analisys.py
+# dairy_train_models.py
+# dairy_preprocess_dataset.py
+# dairy_dataset.csv
+# dairy_evaluation/
+# dairy_plots/
+# dairy_data/
+# current_processed_data.csv
+# final_model.pkl	
+
+/*
+!api
+!vercel.json
+!requirements.txt
