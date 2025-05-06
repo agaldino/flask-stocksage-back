@@ -78,6 +78,11 @@ jobs:
         with:
           app-name: 'stocksage-app'
           slot-name: 'Production'
+
+      - name: 'Veriy requirements.txt'
+        run: |
+          pip list
+
       - name: 'Post deployment actions'
         run: |
           echo "Deployment to Azure Web App completed successfully."
