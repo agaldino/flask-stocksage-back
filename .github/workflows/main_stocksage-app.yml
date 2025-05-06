@@ -79,6 +79,9 @@ jobs:
           app-name: 'stocksage-app'
           slot-name: 'Production'
 
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
       - name: 'Veriy requirements.txt'
         run: |
           pip list
