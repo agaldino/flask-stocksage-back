@@ -81,5 +81,5 @@ jobs:
       - name: 'Post deployment actions'
         run: |
           echo "Deployment to Azure Web App completed successfully."
-          python ../api/index.py # Start the Flask app (or any other command you need to run)
+          python api/index.py # Start the Flask app (or any other command you need to run)
           
