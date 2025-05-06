@@ -85,6 +85,7 @@ jobs:
       - name: 'Veriy requirements.txt'
         run: |
           pip list
+          ls -la
 
       - name: 'Post deployment actions'
         run: |
