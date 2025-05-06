@@ -12,7 +12,7 @@ CORS(app)
 
 
 # Load the dataset (replace 'your_dataset.csv' with the actual path to your dataset)
-dataset_path = "C:\Users\alexa\OneDrive\Anexos\Fiap\stocksage_fiap_challenge\flask-stocksage-back\dairy\current_processed_data.csv"
+dataset_path = "../dairy/current_processed_data.csv"
 df = pd.read_csv(dataset_path)
 
 
