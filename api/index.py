@@ -2,7 +2,7 @@ from flask import Flask, jsonify, request
 from flask_cors import CORS
 import numpy as np
 import pandas as pd
-from ..dairy_model_test_prediction import (
+from dairy_model_test_prediction import (
     prepareDataforPrediction,
     model_prediction,
 )
