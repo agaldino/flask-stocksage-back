@@ -66,8 +66,7 @@ os.makedirs("dairy/dairy_data", exist_ok=True)
 
 # Load the dataset
 print("Loading dataset...")
-dados_path = r"C:\Users\alexa\OneDrive\Anexos\Fiap\projeto_fase4\Enterprise Challenge\data_analysis\stock_control\dairy_dataset.csv"
-# hist_data_path = r"C:\Users\alexa\OneDrive\Anexos\Fiap\stocksage_fiap_challenge\stocksage_backend\historical_diary_study\hist_dairy_data\dairy_data_with_historical_features.csv"
+dados_path = "dairy_dataset.csv"
 data = pd.read_csv(dados_path)
 
 # Display basic information

@@ -5,7 +5,7 @@ import datetime
 
 
 def prepareDataforPrediction(formData):
-    dados_path = r"C:\Users\alexa\OneDrive\Anexos\Fiap\stocksage_fiap_challenge\flask-stocksage-back\dairy\current_processed_data.csv"
+    dados_path = "./dairy/current_processed_data.csv"
     data = pd.read_csv(dados_path)
 
     current_date = datetime.datetime.now()
