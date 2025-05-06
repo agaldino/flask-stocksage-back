@@ -5,7 +5,7 @@ import datetime
 
 
 def prepareDataforPrediction(formData):
-    dados_path = r"/dairy/current_processed_data.csv"
+    dados_path = "../dairy/current_processed_data.csv"
     data = pd.read_csv(dados_path)
 
     current_date = datetime.datetime.now()
@@ -69,9 +69,9 @@ def prepareDataforPrediction(formData):
 def model_prediction(pred_data):
 
     # Carregar modelo e pré-processadores
-    final_model = pd.read_pickle("dairy/dairy_models/final_model.pkl")
+    final_model = pd.read_pickle("../dairy/dairy_models/final_model.pkl")
     with open(
-        "dairy/dairy_models/preprocessor.pkl", "rb"
+        "../dairy/dairy_models/preprocessor.pkl", "rb"
     ) as f:  # Substitua pelo seu pré-processador
         preprocessor = pickle.load(f)
 
