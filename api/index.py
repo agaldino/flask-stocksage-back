@@ -10,9 +10,9 @@ from dairy_model_test_prediction import (
 app = Flask(__name__)
 CORS(app, resources={
     r"/api/*": {
-        "origins": ["http://localhost:3000", "https://stocksage-project-fiap.vercel.app"],  # Adicione seu domínio de produção
-        "methods": ["GET", "POST", "OPTIONS"],  # Permita métodos necessários
-        "allow_headers": ["Content-Type"]
+        "origins": "*",  # Allow all origins
+        "methods": ["*"],  # Allow all methods
+        "allow_headers": ["*"]  # Allow all headers
     }
 })
 
