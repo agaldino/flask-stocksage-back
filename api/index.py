@@ -9,7 +9,7 @@ from dairy_model_test_prediction import (
 
 app = Flask(__name__)
 CORS(app, resources={
-    r"/api/*": {
+    "/*": {
         "origins": "*",  # Allow all origins
         "methods": ["*"],  # Allow all methods
         "allow_headers": ["*"]  # Allow all headers
