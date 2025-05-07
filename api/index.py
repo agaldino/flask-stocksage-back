@@ -8,7 +8,13 @@ from dairy_model_test_prediction import (
 )
 
 app = Flask(__name__)
-CORS(app)
+CORS(app, resources={
+    r"/api/*": {
+        "origins": ["http://localhost:3000", "https://stocksage-project-fiap.vercel.app"],  # Adicione seu domínio de produção
+        "methods": ["GET", "POST", "OPTIONS"],  # Permita métodos necessários
+        "allow_headers": ["Content-Type"]
+    }
+})
 
 
 # Load the dataset (replace 'your_dataset.csv' with the actual path to your dataset)
