@@ -8,13 +8,7 @@ from dairy_model_test_prediction import (
 )
 
 app = Flask(__name__)
-CORS(app, resources={
-    r"/*": {
-        "origins": "*",  # Allow all origins
-        "methods": "*",  # Allow all methods
-        "allow_headers": "*"  # Allow all headers
-    }
-})
+CORS(app, resources={r"/*": {"origins": "*"}})
 
 
 # Load the dataset (replace 'your_dataset.csv' with the actual path to your dataset)
